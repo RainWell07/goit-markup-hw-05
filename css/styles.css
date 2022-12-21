@@ -452,7 +452,7 @@ background-color: #31D0AA;
 .customers:focus .customer-svg {
     fill: #4D5AE5;
 }
-
+/*MODAL*/
 .backdrop {
     position: fixed;
     top: 0;
@@ -476,4 +476,28 @@ background-color: #31D0AA;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+/*MODAL BUTTON*/
+.modal-btn {
+position: fixed;
+right: 24px;
+top: 24px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #E7E9FC;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 24px;
+width: 24px;
+height: 24px;
+}
+.modal-svg {
+    width: 8px;
+    height: 8px;
+}
+.modal-svg:hover {
+    fill: #FFFFFF;
+}
+.modal-btn:hover {
+    background-color:#404BBF;
 }
