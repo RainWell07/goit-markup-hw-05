@@ -41,6 +41,7 @@ ol {
  --title-text-color: #2E2F42;
  --logo-color: #4D5AE5;
  --white-footer: #FFFFFF;
+ --timing-function:cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 a:hover {
@@ -102,6 +103,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation{
+position: relative;
 font-family:"Roboto-bold";
 font-size: 16px;
 line-height: 1.5;
@@ -111,6 +113,20 @@ text-decoration: none;
 transition-property: color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+padding-top:24px;
+padding-bottom:26px;
+
+}
+.navigation::after {
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    content:"";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #404BBF;
+    border-radius: 2px;
 }
 .contacts {
     font-family:"Roboto-regular";
@@ -495,6 +511,10 @@ background-color: #31D0AA;
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
+    transition-property: opacity , visibility ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .modal {
     position: absolute;
@@ -507,7 +527,7 @@ background-color: #31D0AA;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2); 
     border-radius: 4px;
 }
-.backdrop.is-hidden {
+.backdrop.is-hidden  {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -542,3 +562,4 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .modal-btn:hover {
     background-color:#404BBF;
 }
+
