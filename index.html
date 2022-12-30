@@ -244,6 +244,31 @@
                 <use href="./image/symbol-defs(2).svg#modal"></use>
              </svg>
             </button>
+            <div class="modal-order">
+            <h3 class="logo-modal">Leave your contacts and we will call you back</h3>
+            <form class="form">
+                <label class="modal-subs" for="name">Name</label>
+                <div>
+                <input class="fields" type="text" name="name" id="name">
+                </div>
+                <label class="modal-subs" for="phone">Phone</label>
+                <div>
+                <input class="fields" type="text" name="phone" id="phone">
+                </div>
+                <label class="modal-subs" for="email">Email</label>
+                <div>
+                <input class="fields" type="text" name="email" id="email">
+                </div>
+                <label class="modal-subs" for="comment">Comment</label>
+                <div>
+                <textarea  class="field-comment" name="comment" id="comment" placeholder="Text input"></textarea>
+                </div>
+                <div>
+                <input type="checkbox" name="policy" id="policy">
+                <label class="policy" for="policy">I accept the terms and conditions of the Privacy Policy</label>
+                <button class="order-btn" type="submit">Send</button>
+            </form>
+            </div>
         </div>
     </div>
 <!--BACKDROP MODAL-->
@@ -283,6 +308,17 @@
         </ul>
         </div>
     </div>
+    <form class=" footer-email">
+    <label class="subscribe" for="email">Subscribe</label>
+    <ul class="footer-subs">
+     <li><input type="email" name="email" id="email" placeholder="E-mail" class="footer-input"></li>
+     <button class="footer-button" type="submit">Subscribe
+         <svg class="svg-send">
+        <use href="./image/icons.svg#iconsend"></use>
+     </svg>
+     </button>
+    </ul>
+    </form>
     </footer>
     <script src="./js/modal.js"></script>
 </body>
