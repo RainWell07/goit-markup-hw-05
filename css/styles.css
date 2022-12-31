@@ -662,7 +662,8 @@ justify-content: center;
 padding: 8px 25px;
 gap: 16px;
 }
-.footer-button:hover {
+.footer-button:hover,
+.footer-button:focus {
 background-color:#404BBF;
  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
 transition-property: var(--logo-color);
@@ -824,6 +825,9 @@ border-radius: 2px;
 transition-property: background-color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox:focus {
+    border: 2px solid #404BBF;
 }
 .checkbox:checked {
 background-image: url(../image/checkbox.svg);
