@@ -246,27 +246,39 @@
             </button>
             <div class="modal-order">
             <h3 class="logo-modal">Leave your contacts and we will call you back</h3>
-            <form class="form">
+            <form>
+                <ul>
                 <label class="modal-subs" for="name">Name</label>
-                <div>
-                <input class="fields" type="text" name="name" id="name">
-                </div>
+                <li class="order-position">
+                 <input class="fields" type="text" name="name" required minlength="3" placeholder=" ">
+                    <svg class="icon-order">
+                        <use href="./image/icons.svg#name"></use>
+                    </svg>
+                </li>
                 <label class="modal-subs" for="phone">Phone</label>
-                <div>
-                <input class="fields" type="text" name="phone" id="phone">
-                </div>
+                <li class="order-position">
+                <input class="fields" type="text" name="phone" required minlength="5" placeholder=" ">
+                    <svg class="icon-order">
+                        <use href="./image/icons.svg#phone"></use>
+                    </svg>
+                </li>
                 <label class="modal-subs" for="email">Email</label>
-                <div>
-                <input class="fields" type="text" name="email" id="email">
-                </div>
+                <li class="order-position">
+                <input class="fields" type="text" name="email" required minlength="5" placeholder=" "> 
+                    <svg class="icon-order">
+                        <use href="./image/icons.svg#mail"></use>
+                    </svg>
+                </li>
                 <label class="modal-subs" for="comment">Comment</label>
-                <div>
-                <textarea  class="field-comment" name="comment" id="comment" placeholder="Text input"></textarea>
-                </div>
-                <div>
-                <input type="checkbox" name="policy" id="policy">
-                <label class="policy" for="policy">I accept the terms and conditions of the Privacy Policy</label>
+                <li>
+                <textarea  class="field-comment" name="comment" id="comment" placeholder="Text input" required maxlength="500"></textarea> 
+                </li>
+                <li>
+                    <input class="checkbox" type="checkbox" name="policy" id="policy">
+                <label class="policy" for="policy">I accept the terms and conditions of the <a href="#">Privacy Policy</a></label>
+                </li>
                 <button class="order-btn" type="submit">Send</button>
+            </ul>
             </form>
             </div>
         </div>
@@ -311,7 +323,7 @@
     <form class=" footer-email">
     <label class="subscribe" for="email">Subscribe</label>
     <ul class="footer-subs">
-     <li><input type="email" name="email" id="email" placeholder="E-mail" class="footer-input"></li>
+     <li><input class="footer-input" type="email" name="email" id="email" placeholder="E-mail" required minlength="5" ></li>
      <button class="footer-button" type="submit">Subscribe
          <svg class="svg-send">
         <use href="./image/icons.svg#iconsend"></use>
