@@ -244,7 +244,6 @@
                 <use href="./image/symbol-defs(2).svg#modal"></use>
              </svg>
             </button>
-            <div class="modal-order">
             <h3 class="logo-modal">Leave your contacts and we will call you back</h3>
             <form>
                 <ul>
@@ -273,22 +272,22 @@
                 <li>
                 <textarea  class="field-comment" name="comment" id="comment" placeholder="Text input" required maxlength="500"></textarea> 
                 </li>
-                <li>
+                <li class="policy-check">
                 <input class="checkbox" type="checkbox" name="policy" id="policy">
                 <label class="policy" for="policy">I accept the terms and conditions of the <a href="#">Privacy Policy</a></label>
                 </li>
                 <button class="order-btn" type="submit">Send</button>
             </ul>
             </form>
-            </div>
         </div>
     </div>
 <!--BACKDROP MODAL-->
     </main>
 <!--FOOTER-->
     <footer class="footer">
+        <div class="footer-flex">
         <div class="container social-place">
-        <div>
+        <div class="webstudio-margin">
         <a class="webstudio-footer" href="./index.html"><span class="web-btn">WEB</span>STUDIO</a>
         <p class="footer-info">Increase the flow of customers and sales for your business with digital marketing & growth solutions. </p>
         </div>
@@ -296,7 +295,6 @@
         <p class="media-style">Social media</p>
         <ul class="footer-gap">
             <li>
-                <li>
                 <a class="btn-config-footer" href=""><svg class="social-btn-footer">
                 <use href="./image/symbol-defs.svg#instagram"></use>
                 </svg></a>
@@ -315,12 +313,11 @@
                 <a class="btn-config-footer" href=""><svg class="social-btn-footer">
                 <use href="./image/symbol-defs.svg#linkedin"></use>
                 </svg></a>
-                </li>
-            </li>
+                </li>  
         </ul>
         </div>
     </div>
-    <form class=" footer-email">
+    <form>
     <label class="subscribe" for="email">Subscribe</label>
     <ul class="footer-subs">
      <li><input class="footer-input" type="email" name="email" id="email" placeholder="E-mail" required minlength="5" ></li>
@@ -330,7 +327,8 @@
      </svg>
      </button>
     </ul>
-    </form>
+    </form>    
+    </div>
     </footer>
     <script src="./js/modal.js"></script>
 </body>
